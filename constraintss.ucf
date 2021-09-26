@@ -1,0 +1,24 @@
+# # Pin assignments for the Nexys3 Board. 
+# 
+NET "rst" CLOCK_DEDICATED_ROUTE = FALSE;
+net rst              loc=T5 |  IOSTANDARD=LVCMOS33; # Push-Button BTNS 
+net sw_0					loc=T10 |  IOSTANDARD=LVCMOS33;
+net sw_1					loc=T9	|  IOSTANDARD=LVCMOS33;
+Net sw_2						 LOC=V9   |  IOSTANDARD=LVCMOS33; # Slide switch2 
+net restart    		loc=V8 |  IOSTANDARD=LVCMOS33;
+net clk              loc=V10;  # 100 MHz board clock 
+
+net btnu					loc=A8;
+net btnd					loc=C9;	
+ 
+net v_sync           loc=P7;  # VGA-VSYNC 
+net h_sync           loc=N6;  # VGA-HSYNC 
+
+net rgb<5>           loc=U7; # VGA-RED0 
+net rgb<6>           loc=V7; # VGA-RED1 
+net rgb<7>           loc=N7; # VGA-RED2 
+net rgb<2>           loc=P8; # VGA-GRN0 
+net rgb<3>           loc=T6; # VGA-GRN1 
+net rgb<4>           loc=V6; # VGA-GRN2 
+net rgb<0>           loc=R7; # VGA-BLU1 
+net rgb<1>           loc=T7; # VGA-BLU2
